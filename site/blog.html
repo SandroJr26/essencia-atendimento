@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essência do Atendimento - Consultoria para Bares e Restaurantes</title>
+    <meta name="description" content="Transforme a experiência do seu cliente e aumente seu faturamento com nossa consultoria especializada em atendimento para bares e restaurantes.">
+
+    <!-- Links para as Folhas de Estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Scripts (JavaScript) com 'defer' para não bloquear o carregamento -->
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">Essência do Atendimento</a>
+
+            <!-- Navegação para Desktop -->
+            <nav class="nav-desktop">
+                <a href="sobre.html" class="nav-desktop__link">Sobre Nós</a>
+                <a href="servicos.html" class="nav-desktop__link">Serviços</a>
+                <a href="blog.html" class="nav-desktop__link">Blog</a>
+            </nav>
+            <a href="#contato" class="btn btn--primary btn--header-contact">Contato</a>
+
+            <!-- Botão que abre o menu mobile -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <svg class="nav-toggle__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay (Mobile ) -->
+    <div class="nav-mobile" id="nav-menu">
+        <button class="nav-mobile__close" id="nav-close" aria-label="Fechar menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link">Início</a></li>
+            <li class="nav-mobile__item"><a href="sobre-modelo.html" class="nav-mobile__link">Sobre Nós</a></li>
+            <li class="nav-mobile__item"><a href="servicos-modelo.html" class="nav-mobile__link">Serviços</a></li>
+            <li class="nav-mobile__item"><a href="blog-modelo.html" class="nav-mobile__link">Blog</a></li>
+            <li class="nav-mobile__item"><a href="#contato" class="btn btn--primary">Contato</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="section section--light-bg page-header">
+            <div class="container">
+                <h1 class="page-header__title">Nosso Blog</h1>
+                <p class="page-header__subtitle">Artigos, dicas e insights para donos de bares e restaurantes que buscam a excelência.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid grid--2-cols">
+                <article class="post-card">
+                    <div class="post-card__content">
+                        <h3 class="post-card__title">O Atendimento é o Ingrediente Secreto que Nenhum Cardápio Mostra</h3>
+                        <p class="post-card__excerpt">Em um mercado competitivo, o que faz um cliente escolher você? A razão pela qual as pessoas voltam é a forma como se sentem no seu estabelecimento. Um atendimento de qualidade não é apenas ser educado, é criar uma experiência memorável...</p>
+                        <a href="#" class="post-card__link">Ler mais &rarr;</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-card__content">
+                        <h3 class="post-card__title">Como um "Boa Noite" Sincero Pode Aumentar seu Faturamento em 30%</h3>
+                        <p class="post-card__excerpt">Muitos gestores focam em cortar custos, mas esquecem da mina de ouro que já possuem: a experiência do cliente. Um atendimento excepcional leva diretamente ao aumento do faturamento de três formas claras e sustentáveis...</p>
+                        <a href="#" class="post-card__link">Ler mais &rarr;</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-card__content">
+                        <h3 class="post-card__title">Pare de Encher o Balde Furado: Como um Bom Ambiente Reduz a Rotação de Funcionários</h3>
+                        <p class="post-card__excerpt">Contratar e treinar um novo funcionário custa caro. Se você vive em um ciclo constante de trocas, o problema pode não ser as pessoas que você contrata, mas o ambiente que você oferece. Funcionário feliz atende melhor...</p>
+                        <a href="#" class="post-card__link">Ler mais &rarr;</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-card__content">
+                        <h3 class="post-card__title">O Caos Custa Caro: A Importância de um Método de Trabalho Claro</h3>
+                        <p class="post-card__excerpt">Seu estabelecimento opera no modo "caos organizado"? O problema é que o caos, mesmo que pareça funcionar, custa caro em desperdício, erros e estresse. Um método claro cria um padrão de excelência e simplifica a gestão...</p>
+                        <a href="#" class="post-card__link">Ler mais &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer__grid">
+            <a href="index.html" class="footer__logo">Essência do Atendimento</a>
+            <div class="footer__contact">
+                <h3 class="footer__title">Contato</h3>
+                <ul class="footer__list">
+                    <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+                    <li><a href="mailto:contato@essenciadoatendimento.com.br">contato@essenciadoatendimento.com.br</a></li>
+                    <li>Rua Exemplo, Nº 123, São Paulo - SP</li>
+                </ul>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <h3 class="footer__title">Informações</h3>
+                <ul class="footer__list">
+                    <li><a href="servicos-modelo.html">Serviços</a></li>
+                    <li><a href="blog-modelo.html">Blog</a></li>
+                    <li><a href="sobre-modelo.html">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">Essência do Atendimento © Alguns direitos reservados. Desenvolvido por <strong>Sandro Júnior</strong>.</p>
+        </div>
+    </footer>
+
+    <div id="satisfactionPopup" class="popup">
+        <div class="popup__content">
+            <button id="closePopup" class="popup__close">&times;</button>
+            <h3 class="popup__title">Como anda a qualidade do atendimento no seu estabelecimento?</h3>
+            <p>Seus clientes saem mais felizes do que quando entraram? Sua equipe trabalha em sintonia?</p>
+            <p>Se você hesitou em responder, talvez esteja na hora de uma conversa.</p>
+            <a href="#contato" id="popupCtaBtn" class="btn btn--primary popup__btn">Quero melhorar meu atendimento</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

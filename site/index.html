@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essência do Atendimento - Consultoria para Bares e Restaurantes</title>
+    <meta name="description" content="Transforme a experiência do seu cliente e aumente seu faturamento com nossa consultoria especializada em atendimento para bares e restaurantes.">
+
+    <!-- Links para as Folhas de Estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Scripts (JavaScript) com 'defer' para não bloquear o carregamento -->
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">Essência do Atendimento</a>
+
+            <!-- Navegação para Desktop -->
+            <nav class="nav-desktop">
+                <a href="sobre.html" class="nav-desktop__link">Sobre Nós</a>
+                <a href="servicos.html" class="nav-desktop__link">Serviços</a>
+                <a href="blog.html" class="nav-desktop__link">Blog</a>
+            </nav>
+            <a href="#contato" class="btn btn--primary btn--header-contact">Contato</a>
+
+            <!-- Botão que abre o menu mobile -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <svg class="nav-toggle__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay (Mobile ) -->
+    <div class="nav-mobile" id="nav-menu">
+        <button class="nav-mobile__close" id="nav-close" aria-label="Fechar menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link">Início</a></li>
+            <li class="nav-mobile__item"><a href="sobre-modelo.html" class="nav-mobile__link">Sobre Nós</a></li>
+            <li class="nav-mobile__item"><a href="servicos-modelo.html" class="nav-mobile__link">Serviços</a></li>
+            <li class="nav-mobile__item"><a href="blog-modelo.html" class="nav-mobile__link">Blog</a></li>
+            <li class="nav-mobile__item"><a href="#contato" class="btn btn--primary">Contato</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero" id="inicio">
+            <div class="container hero__container">
+                <h1 class="hero__title">O atendimento do seu restaurante é a alma do seu negócio. Nós cuidamos dela.</h1>
+                <p class="hero__subtitle">Consultoria especializada que transforma a experiência do seu cliente, fideliza, e aumenta seu faturamento de forma sustentável.</p>
+                <a href="servicos-modelo.html" class="btn btn--secondary btn--large">Conheça Nossas Soluções</a>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios -->
+        <section class="section" id="beneficios">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Resultados que Falam por Si</h2>
+                    <p class="section__subtitle">Nossa metodologia gera impacto real e mensurável no seu dia a dia.</p>
+                </div>
+                <div class="grid grid--4-cols">
+                    <div class="card">
+                        <div class="card__icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg></div>
+                        <h3 class="card__title">Aumento do Ticket Médio</h3>
+                        <p>Com técnicas de venda consultiva, sua equipe aumentará o valor por cliente de forma natural e elegante.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                            </svg></div>
+                        <h3 class="card__title">Avaliações 5 Estrelas</h3>
+                        <p>Transforme clientes satisfeitos em promotores. Veja suas notas no Google, iFood e redes sociais decolarem.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.085a2 2 0 00-1.736.97l-2.7 4.5m7 10a2 2 0 002-2v-3a2 2 0 00-2-2m0 5a2 2 0 01-2 2h-4.764a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.737 5h4.017c.163 0 .326.02.485.06L17 6m-3 4h.01" />
+                            </svg></div>
+                        <h3 class="card__title">Clientes Fiéis</h3>
+                        <p>Crie uma base de clientes que não apenas retorna, mas que defende e recomenda seu estabelecimento.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg></div>
+                        <h3 class="card__title">Menor Rotação de Equipe</h3>
+                        <p>Um ambiente com processos claros e cultura forte retém talentos e cria uma equipe motivada e de alta performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós (Resumo ) -->
+        <section class="section section--light-bg">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nossa História é a Solução para a Sua</h2>
+                    <p class="section__subtitle">A Essência do Atendimento nasceu da inquietação de três profissionais que viveram na pele a realidade do seu negócio. Unimos nossas experiências para oferecer uma solução completa, que vai do controle de estoque à criação de uma cultura de hospitalidade.</p>
+                </div>
+                <div class="grid grid--3-cols">
+                    <div class="card-profile"><img src="assets/images/sandro.jpg" alt="Foto de Sandro Júnior, o Estrategista" class="card-profile__img">
+                        <h3 class="card-profile__name">Sandro Júnior</h3>
+                        <p class="card-profile__role">O Estrategista</p>
+                        <p class="card-profile__bio">Com 14 anos de experiência e um olhar clínico para operações, Sandro é o arquiteto por trás da transformação do seu negócio, garantindo que cada engrenagem funcione com precisão e paixão.</p>
+                    </div>
+                    <div class="card-profile"><img src="assets/images/maury.jpg" alt="Foto de Maury, o Coração do Atendimento" class="card-profile__img">
+                        <h3 class="card-profile__name">Maury</h3>
+                        <p class="card-profile__role">O Coração do Atendimento</p>
+                        <p class="card-profile__bio">Após 8 anos na linha de frente, Maury treina equipes para criar conexões verdadeiras, transformando clientes em fãs e o simples ato de servir em uma experiência encantadora.</p>
+                    </div>
+                    <div class="card-profile"><img src="assets/images/gybran.jpg" alt="Foto de Gybran, o Guardião da Eficiência" class="card-profile__img">
+                        <h3 class="card-profile__name">Gybran</h3>
+                        <p class="card-profile__role">O Guardião da Eficiência</p>
+                        <p class="card-profile__bio">Contador e especialista em gestão, Gybran otimiza seu controle de estoque e finanças, garantindo que sua operação seja não apenas excelente, mas também lucrativa e sustentável.</p>
+                    </div>
+                </div>
+                <div class="section__cta"><a href="sobre-modelo.html" class="btn btn--primary">Conheça nossa trajetória</a></div>
+            </div>
+        </section>
+
+        <!-- Seção de Ebook -->
+        <section class="section section--dark-bg" id="ebook">
+            <div class="container ebook-container">
+                <div class="ebook__content">
+                    <h2 class="ebook__title">Receba um Diagnóstico Gratuito</h2>
+                    <p>Antes mesmo de contratar, receba nosso ebook "Os 5 Erros Silenciosos que Sabotam seu Atendimento" e descubra pontos de melhoria imediata no seu negócio.</p>
+                    <ul class="ebook__list">
+                        <li>Técnicas de abordagem que encantam</li>
+                        <li>Como reduzir o tempo de espera em horários de pico</li>
+                        <li>Estratégias simples de upselling</li>
+                        <li>Como transformar reclamações em oportunidades</li>
+                    </ul>
+                </div>
+                <div class="ebook__form-wrapper">
+                    <form id="ebookForm" class="form" novalidate>
+                        <h3 class="form__title">Receba seu diagnóstico gratuito</h3>
+                        <p class="form__subtitle">Preencha os dados abaixo e receba em seu e-mail nosso material exclusivo com dicas práticas para transformar seu atendimento.</p>
+
+                        <div class="form__group">
+                            <label for="ebook-name" class="form__label">Nome completo *</label>
+                            <input type="text" id="ebook-name" name="name" class="form__input" required placeholder="Digite seu nome completo" aria-describedby="name-error">
+                            <span id="name-error" class="form__error" role="alert"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="ebook-email" class="form__label">Seu melhor e-mail *</label>
+                            <input type="email" id="ebook-email" name="email" class="form__input" required placeholder="seuemail@exemplo.com" aria-describedby="email-error">
+                            <span id="email-error" class="form__error" role="alert"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="ebook-phone" class="form__label">WhatsApp (opcional)</label>
+                            <input type="tel" id="ebook-phone" name="phone" class="form__input" placeholder="(11) 99999-9999" aria-describedby="phone-help">
+                            <small id="phone-help" class="form__help">Para receber dicas exclusivas via WhatsApp</small>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="ebook-business" class="form__label">Tipo de estabelecimento</label>
+                            <select id="ebook-business" name="business_type" class="form__select">
+                                <option value="">Selecione uma opção</option>
+                                <option value="restaurante">Restaurante</option>
+                                <option value="bar">Bar</option>
+                                <option value="lanchonete">Lanchonete</option>
+                                <option value="cafeteria">Cafeteria</option>
+                                <option value="pizzaria">Pizzaria</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group form__checkbox-group">
+                            <input type="checkbox" id="ebook-consent" name="consent" class="form__checkbox" required>
+                            <label for="ebook-consent" class="form__checkbox-label">
+                                Concordo em receber materiais educativos e comunicações da Essência do Atendimento. Posso cancelar a qualquer momento. *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--secondary btn--full-width" id="ebookSubmitBtn">
+                            <span class="btn__text">Receber Material Gratuito</span>
+                            <span class="btn__loading" style="display: none;">Enviando...</span>
+                        </button>
+
+                        <p class="form__privacy">
+                            <small>Seus dados estão seguros. Não compartilhamos informações com terceiros.</small>
+                        </p>
+                    </form>
+                    <div id="ebookSuccessMessage" class="form-success" style="display: none;">
+                        <h3 class="form-success__title">Obrigado!</h3>
+                        <p>Seu ebook está a caminho do seu e-mail. Verifique sua caixa de entrada (e de spam) nos próximos minutos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer__grid">
+            <a href="index.html" class="footer__logo">Essência do Atendimento</a>
+            <div class="footer__contact">
+                <h3 class="footer__title">Contato</h3>
+                <ul class="footer__list">
+                    <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+                    <li><a href="mailto:contato@essenciadoatendimento.com.br">contato@essenciadoatendimento.com.br</a></li>
+                    <li>Rua Exemplo, Nº 123, São Paulo - SP</li>
+                </ul>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <h3 class="footer__title">Informações</h3>
+                <ul class="footer__list">
+                    <li><a href="servicos-modelo.html">Serviços</a></li>
+                    <li><a href="blog-modelo.html">Blog</a></li>
+                    <li><a href="sobre-modelo.html">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">Essência do Atendimento © Alguns direitos reservados. Desenvolvido por <strong>Sandro Júnior</strong>.</p>
+        </div>
+    </footer>
+
+    <div id="satisfactionPopup" class="popup">
+        <div class="popup__content">
+            <button id="closePopup" class="popup__close">&times;</button>
+            <h3 class="popup__title">Como anda a qualidade do atendimento no seu estabelecimento?</h3>
+            <p>Seus clientes saem mais felizes do que quando entraram? Sua equipe trabalha em sintonia?</p>
+            <p>Se você hesitou em responder, talvez esteja na hora de uma conversa.</p>
+            <a href="#contato" id="popupCtaBtn" class="btn btn--primary popup__btn">Quero melhorar meu atendimento</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

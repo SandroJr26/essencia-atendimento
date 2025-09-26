@@ -1,0 +1,415 @@
+/*
+ * ===================================================================
+ * ESSÊNCIA DO ATENDIMENTO - ESTILOS GLOBAIS (MOBILE-FIRST)
+ * ===================================================================
+ * Design com tema taverna/madeira, focado em geração de leads
+ * e experiência mobile-first otimizada.
+ */
+
+/* --- Variáveis CSS (Paleta Taverna/Madeira) --- */
+:root {
+  /* Cores Principais - Tema Taverna/Madeira */
+  --color-primary: #A67B5B;        /* Aconchego - Marrom Madeira */
+  --color-secondary: #3E4C5E;      /* Confiança - Azul Acinzentado */
+  --color-accent: #D98362;         /* Ação e Cuidado - Terracota */
+  --color-background: #FDFBF8;     /* Leveza - Branco Creme */
+  --color-text: #333333;           /* Legibilidade - Cinza Escuro */
+  
+  /* Cores Complementares */
+  --color-light: #FFFFFF;
+  --color-dark: #2C1810;           /* Marrom Muito Escuro */
+  --color-muted: #8B7355;          /* Marrom Acinzentado */
+  --color-border: #E8E0D6;         /* Bege Claro para Bordas */
+  
+  /* Estados de Interação */
+  --color-hover: #8B5A3C;          /* Hover Primário */
+  --color-accent-hover: #C7724F;   /* Hover Accent */
+  --color-success: #4A7C59;        /* Verde Musgo */
+  --color-error: #B85450;          /* Vermelho Terroso */
+  
+  /* Tipografia */
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-secondary: "Playfair Display", Georgia, serif;
+  
+  /* Espaçamentos */
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1.6rem;
+  --spacing-md: 2.4rem;
+  --spacing-lg: 3.2rem;
+  --spacing-xl: 4.8rem;
+  --spacing-2xl: 6.4rem;
+  
+  /* Bordas e Sombras */
+  --border-radius: 0.8rem;
+  --border-radius-lg: 1.2rem;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+  
+  /* Transições */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+/* --- Reset e Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Layout Base --- */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+/* Mobile: Padding menor */
+@media (max-width: 48em) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+/* --- Grid System (Mobile-First) --- */
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr;
+}
+
+.grid--4-cols {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 48em) {
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* --- Tipografia --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+/* Tablet e Desktop - Tipografia maior */
+@media (min-width: 48em) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 4.8rem;
+  }
+  
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+/* --- Links --- */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-hover);
+}
+
+/* --- Seções --- */
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section--light-bg {
+  background-color: var(--color-light);
+}
+
+.section--dark-bg {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}
+
+.section--dark-bg h1,
+.section--dark-bg h2,
+.section--dark-bg h3,
+.section--dark-bg h4,
+.section--dark-bg h5,
+.section--dark-bg h6 {
+  color: var(--color-light);
+}
+
+.section--dark-bg p {
+  color: var(--color-light);
+  opacity: 0.9;
+}
+
+/* Desktop - Seções com mais espaçamento */
+@media (min-width: 64em) {
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+}
+
+/* --- Cabeçalhos de Seção --- */
+.section__header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.section__header--center {
+  max-width: 60rem;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.section__title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.section__subtitle {
+  font-size: 1.8rem;
+  color: var(--color-muted);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.section--dark-bg .section__subtitle {
+  color: var(--color-light);
+  opacity: 0.8;
+}
+
+/* --- Call to Action --- */
+.section__cta {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+/* --- Utilitários --- */
+.text-center {
+  text-align: center;
+}
+
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+/* --- Estados de Foco e Acessibilidade --- */
+*:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* --- Animações Base --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --- Classe para animações --- */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-left {
+  animation: slideInFromLeft 0.6s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideInFromRight 0.6s ease-out;
+}
+
+/* --- Preferências de Movimento Reduzido --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* --- Skip Link para Acessibilidade --- */
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: var(--spacing-sm);
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  z-index: 9999;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--spacing-sm);
+}
+
+/* --- Print Styles --- */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  
+  .header,
+  .footer,
+  .nav-mobile,
+  .popup {
+    display: none !important;
+  }
+  
+  .container {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+}

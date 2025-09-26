@@ -1,0 +1,59 @@
+/* ARQUIVO 3: ESTILOS RESPONSIVOS (MOBILE-FIRST) */
+
+/* ===================================================================
+ * --- ESTILOS PARA TELAS MAIORES (TABLET E DESKTOP) ---
+ * ===================================================================
+ * Estilos aplicados a partir de um determinado breakpoint (min-width).
+ */
+
+
+
+
+
+/* Telas de Tablet (a partir de 768px) */
+@media (min-width: 768px) {
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__title,
+  .page-header__title {
+    font-size: 5rem;
+  }
+}
+
+/* Telas de Desktop (a partir de 1200px) */
+@media (min-width: 1200px) {
+  .nav-desktop,
+  .btn--header-contact {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .footer__grid {
+    grid-template-columns: 3fr 5fr 4fr;
+    text-align: left;
+  }
+
+  .footer__logo {
+    justify-self: start;
+  }
+
+  .footer__social {
+    justify-content: flex-start;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+

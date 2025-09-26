@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Essência do Atendimento | Consultoria Especializada</title>
+    <meta name="description" content="Conheça nossos serviços de consultoria em atendimento para bares e restaurantes. Diagnóstico, treinamento, implementação e acompanhamento personalizado.">
+
+    <!-- Links para as Folhas de Estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Scripts (JavaScript) com 'defer' para não bloquear o carregamento -->
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">Essência do Atendimento</a>
+
+            <!-- Navegação para Desktop -->
+            <nav class="nav-desktop">
+                <a href="sobre.html" class="nav-desktop__link">Sobre Nós</a>
+                <a href="servicos.html" class="nav-desktop__link nav-desktop__link--active">Serviços</a>
+                <a href="blog.html" class="nav-desktop__link">Blog</a>
+            </nav>
+            <a href="contato.html" class="btn btn--primary btn--header-contact">Contato</a>
+
+            <!-- Botão que abre o menu mobile -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <svg class="nav-toggle__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay (Mobile) -->
+    <div class="nav-mobile" id="nav-menu">
+        <button class="nav-mobile__close" id="nav-close" aria-label="Fechar menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link">Início</a></li>
+            <li class="nav-mobile__item"><a href="sobre-modelo.html" class="nav-mobile__link">Sobre Nós</a></li>
+            <li class="nav-mobile__item"><a href="servicos-modelo.html" class="nav-mobile__link nav-mobile__link--active">Serviços</a></li>
+            <li class="nav-mobile__item"><a href="blog-modelo.html" class="nav-mobile__link">Blog</a></li>
+            <li class="nav-mobile__item"><a href="contato.html" class="btn btn--primary">Contato</a></li>
+        </ul>
+    </div>
+
+    <main id="main">
+        <!-- Cabeçalho da Página -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Soluções Completas para Transformar seu Atendimento</h1>
+                <p class="page-header__subtitle">Metodologia comprovada que gera resultados reais: mais clientes satisfeitos, maior faturamento e equipe motivada.</p>
+            </div>
+        </section>
+
+        <!-- Seção Nossos Serviços -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Como Podemos Ajudar Seu Negócio</h2>
+                    <p class="section__subtitle">Oferecemos soluções personalizadas que atendem às necessidades específicas do seu estabelecimento, desde pequenos bares até grandes redes de restaurantes.</p>
+                </div>
+
+                <div class="grid grid--2-cols">
+                    <!-- Serviço 1: Diagnóstico -->
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Diagnóstico Completo</h3>
+                        <p>Análise profunda de todos os aspectos do seu atendimento: processos, equipe, ambiente e experiência do cliente. Identificamos oportunidades de melhoria e criamos um plano de ação personalizado.</p>
+                    </div>
+
+                    <!-- Serviço 2: Treinamento -->
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Treinamento de Equipe</h3>
+                        <p>Capacitação prática e teórica para transformar sua equipe em especialistas em hospitalidade e vendas. Técnicas de atendimento, upselling e gestão de conflitos.</p>
+                    </div>
+
+                    <!-- Serviço 3: Implementação -->
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Implementação de Processos</h3>
+                        <p>Criação e implementação de processos padronizados que garantem consistência e qualidade no atendimento. Manuais, fluxos de trabalho e indicadores de performance.</p>
+                    </div>
+
+                    <!-- Serviço 4: Acompanhamento -->
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Acompanhamento Contínuo</h3>
+                        <p>Suporte mensal para garantir que os resultados se mantenham e evoluam constantemente. Reuniões de acompanhamento, análise de indicadores e ajustes contínuos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Pacotes -->
+        <section class="section section--light-bg" id="planos">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nossos Planos</h2>
+                    <p class="section__subtitle">Escolha o plano ideal para o momento do seu negócio. Todos incluem nossa metodologia comprovada e suporte personalizado.</p>
+                </div>
+
+                <div class="grid grid--3-cols">
+                    <!-- Plano Essencial -->
+                    <div class="card">
+                        <div class="plan-header">
+                            <h3 class="plan-title">Diagnóstico Essencial</h3>
+                            <div class="plan-price">
+                                <span class="plan-price__value">R$ 1.200</span>
+                                <span class="plan-price__period">pagamento único</span>
+                            </div>
+                            <p class="plan-description">Ajustes rápidos e de alto impacto para estabelecimentos que precisam de melhorias pontuais.</p>
+                        </div>
+
+                        <div class="plan-features">
+                            <h4>O que está incluso:</h4>
+                            <ul>
+                                <li>Diagnóstico presencial em 2 visitas</li>
+                                <li>Workshop de 4h com a equipe</li>
+                                <li>Manual digital de boas práticas</li>
+                                <li>Relatório com 5 ações prioritárias</li>
+                                <li>Suporte via WhatsApp por 30 dias</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-cta">
+                            <a href="contato.html" class="btn btn--outline btn--full-width">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+
+                    <!-- Plano Transformação (Destaque) -->
+                    <div class="card card--featured">
+                        <div class="plan-badge">Mais Popular</div>
+                        <div class="plan-header">
+                            <h3 class="plan-title">Plano Transformação</h3>
+                            <div class="plan-price">
+                                <span class="plan-price__value">R$ 2.500</span>
+                                <span class="plan-price__period">pagamento único</span>
+                            </div>
+                            <p class="plan-description">A solução completa para estabelecimentos que querem uma transformação real e duradoura.</p>
+                        </div>
+
+                        <div class="plan-features">
+                            <h4>O que está incluso:</h4>
+                            <ul>
+                                <li>Diagnóstico completo (1 semana)</li>
+                                <li>3 treinamentos práticos com a equipe (12h)</li>
+                                <li>Manual de atendimento personalizado</li>
+                                <li>Implementação de técnicas de upselling</li>
+                                <li>2 semanas de acompanhamento pós-implementação</li>
+                                <li>Relatório de resultados (antes e depois)</li>
+                                <li>Suporte via WhatsApp por 60 dias</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-cta">
+                            <a href="contato.html" class="btn btn--primary btn--full-width">Quero Transformar Meu Negócio</a>
+                        </div>
+                    </div>
+
+                    <!-- Plano Parceria -->
+                    <div class="card">
+                        <div class="plan-header">
+                            <h3 class="plan-title">Parceria de Excelência</h3>
+                            <div class="plan-price">
+                                <span class="plan-price__value">R$ 600</span>
+                                <span class="plan-price__period">por mês</span>
+                            </div>
+                            <p class="plan-description">Manutenção e melhoria contínua para estabelecimentos que buscam excelência constante.</p>
+                        </div>
+
+                        <div class="plan-features">
+                            <h4>O que está incluso:</h4>
+                            <ul>
+                                <li>Visita mensal de acompanhamento</li>
+                                <li>Análise de métricas e indicadores</li>
+                                <li>Treinamento de reforço (2h/mês)</li>
+                                <li>Suporte direto via WhatsApp</li>
+                                <li>Reunião estratégica trimestral</li>
+                                <li>Ajustes de processos conforme necessário</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-cta">
+                            <a href="contato.html" class="btn btn--secondary btn--full-width">Ser um Parceiro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Resultados -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Resultados Comprovados</h2>
+                    <p class="section__subtitle">Veja os resultados reais que nossos clientes alcançaram após implementar nossa metodologia.</p>
+                </div>
+
+                <div class="grid grid--4-cols">
+                    <div class="card text-center">
+                        <div class="result-number">+35%</div>
+                        <h4>Aumento no Ticket Médio</h4>
+                        <p>Média de crescimento no valor por cliente após 3 meses</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="result-number">4.8★</div>
+                        <h4>Avaliação Média</h4>
+                        <p>Nota média no Google e redes sociais após nossa consultoria</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="result-number">-60%</div>
+                        <h4>Redução na Rotatividade</h4>
+                        <p>Diminuição na saída de funcionários</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="result-number">+50%</div>
+                        <h4>Clientes Recorrentes</h4>
+                        <p>Aumento na frequência de retorno dos clientes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção CTA Final -->
+        <section class="section section--dark-bg">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h2 class="section__title">Pronto para Transformar seu Atendimento?</h2>
+                    <p class="section__subtitle">Agende uma conversa gratuita e descubra como podemos ajudar seu estabelecimento a alcançar resultados extraordinários.</p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn--secondary btn--large">Falar com Especialista</a>
+                        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os serviços da Essência do Atendimento." target="_blank" rel="noopener" class="btn btn--outline btn--large">
+                            WhatsApp Direto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer__grid">
+            <a href="index.html" class="footer__logo">Essência do Atendimento</a>
+            <div class="footer__contact">
+                <h3 class="footer__title">Contato</h3>
+                <ul class="footer__list">
+                    <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+                    <li><a href="mailto:contato@essenciadoatendimento.com.br">contato@essenciadoatendimento.com.br</a></li>
+                    <li>Atendemos todo o Brasil</li>
+                </ul>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <h3 class="footer__title">Informações</h3>
+                <ul class="footer__list">
+                    <li><a href="servicos-modelo.html">Serviços</a></li>
+                    <li><a href="blog-modelo.html">Blog</a></li>
+                    <li><a href="sobre-modelo.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">Essência do Atendimento © Alguns direitos reservados. Desenvolvido por <strong>Sandro Júnior</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

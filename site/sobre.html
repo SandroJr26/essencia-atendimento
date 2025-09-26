@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Essência do Atendimento</title>
+    <meta name="description" content="Conheça a história e a experiência dos sócios por trás da consultoria que vai transformar o seu negócio.">
+
+    <!-- Links para as Folhas de Estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Scripts (JavaScript) com 'defer' para não bloquear o carregamento -->
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">Essência do Atendimento</a>
+
+            <!-- Navegação para Desktop -->
+            <nav class="nav-desktop">
+                <a href="sobre.html" class="nav-desktop__link nav-desktop__link--active">Sobre Nós</a>
+                <a href="servicos.html" class="nav-desktop__link">Serviços</a>
+                <a href="blog.html" class="nav-desktop__link">Blog</a>
+            </nav>
+            <a href="#contato" class="btn btn--primary btn--header-contact">Contato</a>
+
+            <!-- Botão que abre o menu mobile -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <svg class="nav-toggle__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay (Mobile) -->
+    <div class="nav-mobile" id="nav-menu">
+        <button class="nav-mobile__close" id="nav-close" aria-label="Fechar menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link">Início</a></li>
+            <li class="nav-mobile__item"><a href="sobre-modelo.html" class="nav-mobile__link nav-mobile__link--active">Sobre Nós</a></li>
+            <li class="nav-mobile__item"><a href="servicos-modelo.html" class="nav-mobile__link">Serviços</a></li>
+            <li class="nav-mobile__item"><a href="blog-modelo.html" class="nav-mobile__link">Blog</a></li>
+            <li class="nav-mobile__item"><a href="#contato" class="btn btn--primary">Contato</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Cabeçalho da Página -->
+        <section class="section section--light-bg page-header">
+            <div class="container">
+                <h1 class="page-header__title">Nossa Paixão é a Sua Solução</h1>
+                <p class="page-header__subtitle">Entenda como nossas histórias se uniram para criar a consultoria que vai transformar seu negócio.</p>
+            </div>
+        </section>
+
+        <!-- Seção Nossa História -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nossa História é a Solução para a Sua</h2>
+                    <p class="section__subtitle">A Essência do Atendimento nasceu da inquietação de três profissionais que viveram na pele a realidade do seu negócio. Unimos nossas experiências para oferecer uma solução completa, que vai do controle de estoque à criação de uma cultura de hospitalidade.</p>
+                </div>
+
+                <div class="grid grid--3-cols">
+                    <div class="card-profile">
+                        <img src="assets/images/sandro.jpg" alt="Foto de Sandro Júnior, o Estrategista" class="card-profile__img">
+                        <h3 class="card-profile__name">Sandro Júnior</h3>
+                        <p class="card-profile__role">O Estrategista</p>
+                        <p class="card-profile__bio">Com 14 anos de experiência e um olhar clínico para operações, Sandro é o arquiteto por trás da transformação do seu negócio, garantindo que cada engrenagem funcione com precisão e paixão.</p>
+                    </div>
+
+                    <div class="card-profile">
+                        <img src="assets/images/maury.jpg" alt="Foto de Maury, o Coração do Atendimento" class="card-profile__img">
+                        <h3 class="card-profile__name">Maury</h3>
+                        <p class="card-profile__role">O Coração do Atendimento</p>
+                        <p class="card-profile__bio">Após 8 anos na linha de frente, Maury treina equipes para criar conexões verdadeiras, transformando clientes em fãs e o simples ato de servir em uma experiência encantadora.</p>
+                    </div>
+
+                    <div class="card-profile">
+                        <img src="assets/images/gybran.jpg" alt="Foto de Gybran, o Guardião da Eficiência" class="card-profile__img">
+                        <h3 class="card-profile__name">Gybran</h3>
+                        <p class="card-profile__role">O Guardião da Eficiência</p>
+                        <p class="card-profile__bio">Contador e especialista em gestão, Gybran otimiza seu controle de estoque e finanças, garantindo que sua operação seja não apenas excelente, mas também lucrativa e sustentável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Nossa Metodologia -->
+        <section class="section section--light-bg">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nossa Metodologia Comprovada</h2>
+                    <p class="section__subtitle">Desenvolvemos um processo estruturado que garante resultados mensuráveis e duradouros para o seu negócio.</p>
+                </div>
+
+                <div class="grid grid--2-cols">
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Diagnóstico Completo</h3>
+                        <p>Analisamos cada aspecto do seu negócio: desde o fluxo de clientes até os processos internos, identificando oportunidades de melhoria que você talvez nem imagine que existam.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Treinamento Personalizado</h3>
+                        <p>Capacitamos sua equipe com técnicas práticas e eficazes, criando uma cultura de excelência que se reflete em cada interação com o cliente.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Acompanhamento Contínuo</h3>
+                        <p>Não abandonamos você após a implementação. Oferecemos suporte contínuo para garantir que os resultados se mantenham e evoluam com o tempo.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="card__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Resultados Rápidos</h3>
+                        <p>Nossa abordagem focada permite que você veja melhorias significativas já nas primeiras semanas de implementação das nossas estratégias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Call to Action -->
+        <section class="section section--dark-bg">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h2 class="section__title">Pronto para Transformar seu Negócio?</h2>
+                    <p class="section__subtitle">Vamos conversar sobre como podemos ajudar você a criar a experiência que seus clientes merecem e que seu negócio precisa para crescer.</p>
+                    <a href="#contato" class="btn btn--secondary btn--large">Fale Conosco Agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer__grid">
+            <a href="index.html" class="footer__logo">Essência do Atendimento</a>
+            <div class="footer__contact">
+                <h3 class="footer__title">Contato</h3>
+                <ul class="footer__list">
+                    <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+                    <li><a href="mailto:contato@essenciadoatendimento.com.br">contato@essenciadoatendimento.com.br</a></li>
+                    <li>Rua Exemplo, Nº 123, São Paulo - SP</li>
+                </ul>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <h3 class="footer__title">Informações</h3>
+                <ul class="footer__list">
+                    <li><a href="servicos-modelo.html">Serviços</a></li>
+                    <li><a href="blog-modelo.html">Blog</a></li>
+                    <li><a href="sobre-modelo.html">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">Essência do Atendimento © Alguns direitos reservados. Desenvolvido por <strong>Sandro Júnior</strong>.</p>
+        </div>
+    </footer>
+
+    <div id="satisfactionPopup" class="popup">
+        <div class="popup__content">
+            <button id="closePopup" class="popup__close">&times;</button>
+            <h3 class="popup__title">Como anda a qualidade do atendimento no seu estabelecimento?</h3>
+            <p>Seus clientes saem mais felizes do que quando entraram? Sua equipe trabalha em sintonia?</p>
+            <p>Se você hesitou em responder, talvez esteja na hora de uma conversa.</p>
+            <a href="#contato" id="popupCtaBtn" class="btn btn--primary popup__btn">Quero melhorar meu atendimento</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
